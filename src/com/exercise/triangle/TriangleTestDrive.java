@@ -43,19 +43,20 @@ public class TriangleTestDrive {
         System.out.println("Isosceles Triangle");
 
         for (int row = 0; row < 3; row = row + 1) {
-            //m < 3 - row - 1 calculating how many spaces we need- we abstract number of row from 3 and abstract 1 because our
-            //rows starts with 0.
-            for(int m = 0; m < 3 - row - 1 ; m = m + 1) {
+                //m < 3 - row - 1 calculating how many spaces we need- we abstract number of row from 3 and abstract 1 because our
+                //rows starts with 0.
+            for (int m = 0; m < 3 - row - 1; m = m + 1) {
                 System.out.print(" ");
             }
-            for(int k = 0; k <= 2 * row ; k = k + 1) {
-                System.out.print(oneAsterisk);
+            for (int k = 0; k <= 2 * row; k = k + 1) {
+                System.out.print("*");
             }
 
             System.out.println("");
         }
 
         System.out.println("Diamond");
+
         for (int row = 0; row < 2; row = row + 1) {
 
             for(int m = 0; m < 3 - row - 1 ; m = m + 1) {
@@ -108,5 +109,24 @@ public class TriangleTestDrive {
             System.out.println("");
         }
 
+        System.out.println("--FizzBuzz--");
+
+        int number = 1;
+        while (number < 101){
+            if(number % 3 == 0 && number % 5 == 0){
+                System.out.println("FizzBuzz");
+            } else if(number % 3 == 0) {
+                System.out.println("Fizz");
+            } else if(number % 5 == 0){
+                System.out.println("Buzz");
+            } else {
+                System.out.println(number);
+            }
+            number = number + 1;
+        }
+
+
     }
+
+
 }
