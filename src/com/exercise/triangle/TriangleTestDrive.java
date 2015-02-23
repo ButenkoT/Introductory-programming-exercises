@@ -55,8 +55,58 @@ public class TriangleTestDrive {
             System.out.println("");
         }
 
-//        System.out.println("Diamond");
+        System.out.println("Diamond");
+        for (int row = 0; row < 2; row = row + 1) {
 
+            for(int m = 0; m < 3 - row - 1 ; m = m + 1) {
+                System.out.print(" ");
+            }
+            for(int k = 0; k <= 2 * row ; k = k + 1) {
+                System.out.print(oneAsterisk);
+            }
+
+            System.out.println("");
+        }
+
+        for (int row = 0; row < 3; row = row + 1) {
+
+            for(int m = 0; m <  row; m = m + 1) {
+                System.out.print(" ");
+            }
+            for(int k = 0; k <= (3 - row - 1)* 2; k = k + 1) {
+                System.out.print(oneAsterisk);
+            }
+
+            System.out.println("");
+        }
+
+        System.out.println("Diamond with Name");
+
+        for (int row = 0; row < 2; row = row + 1) {
+
+            for(int m = 0; m < 3 - row - 1 ; m = m + 1) {
+                System.out.print(" ");
+            }
+            for(int k = 0; k <= 2 * row ; k = k + 1) {
+                System.out.print(oneAsterisk);
+            }
+
+            System.out.println("");
+        }
+
+        System.out.println("Bill");
+
+        for (int row = 0; row < 2; row = row + 1) {
+
+            for(int m = 0; m <  row + 1; m = m + 1) {
+                System.out.print(" ");
+            }
+            for(int k = 0; k <= (2 - row - 1)* 2; k = k + 1) {
+                System.out.print(oneAsterisk);
+            }
+
+            System.out.println("");
+        }
 
     }
 }
