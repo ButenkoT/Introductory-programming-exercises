@@ -1,22 +1,25 @@
 package com.exercise.triangle;
+import java.util.*;
 
 /**
  * Created by tetianabutenko on 23/02/2015.
  */
 class PrimeNum {
 
-    int generate(int n){
-        int z = 2;
+    //decided to try static method
+    public static ArrayList generate(int n){
+        ArrayList prime = new ArrayList();
 
-        while(z < n){
+        for (int z = 2; z <= n; z = z + 1) {
 
-            if(n % z == 0) {
-                System.out.println(z);
+            if (n % z == 0) {
+
+                prime.add(z); // add prime factor to arraylist
+                n = n/z;
+                z = z - 1;
             }
-            z = z + 1;
         }
 
-        System.out.println(z);
-        return z;
+        return prime;
     }
 }
